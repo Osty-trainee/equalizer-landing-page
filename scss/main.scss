@@ -284,3 +284,127 @@
         }
     }
 }
+
+@media (min-width: 1100px) {
+    body{
+        background-image: 
+            url('../assets/image/bg-pattern-1.svg'),
+            url('../assets/image/bg-main-desktop.png');
+        background-repeat: no-repeat, no-repeat;
+        background-position: 
+            1200px -40px,
+            left -400px top -200px;
+        background-size: 312px 468px, 1950px auto;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column; 
+        align-items: center;    
+        max-width: 69.375rem;     
+        margin: 0 auto;         
+        position: relative;     
+    }
+
+    .header{
+        max-width: 70rem;
+        width: 100%;
+        margin: var(--spacing-800) auto var(--spacing-1600) auto;
+    }
+
+    .hero{
+        max-width: 70rem;
+        width: 100%;
+        margin: 0 auto var(--spacing-800) auto;
+
+        &__title{
+            max-width: 58rem;
+            font-size: 5.5rem;
+            margin-bottom: var(--spacing-500);
+        }
+
+        &__description{
+            max-width: 46rem;
+            font-size: var(--spacing-250);
+        }
+    }
+
+    .app-preview {
+        max-width: 70rem;
+        width: 100%;
+        max-height: 37.5rem;
+        border-radius: 12px;
+        margin: 0 auto;
+        margin-top: var(--spacing-2500);
+        margin-bottom: var(--spacing-2500);
+        position: relative;
+
+        background-position: 47% 0; 
+        background-size: auto;
+
+        &__img {
+            width: 19.5rem;
+            display: inline;
+            margin: -160px auto var(--spacing-2500) var(--spacing-1000);
+        }
+    }
+
+    .pricing{
+        position: relative;
+        z-index: 10;
+
+        max-width: 32rem;
+        max-height: 39.5rem;
+
+        padding: var(--spacing-700);  
+        border-radius: var(--spacing-200);      
+        
+        margin-left: auto; 
+        margin-right: 120px;
+        margin-top: -770px; 
+        margin-bottom: var(--spacing-1600);
+        transform: translateY(4.5rem); 
+
+        .card{
+            &__description{
+                font-size: var(--spacing-250);
+            }
+        }
+
+        .btn{
+            margin-bottom: 0;
+
+            &--apple {
+                margin-bottom: var(--spacing-200);
+            }
+        }
+    }
+
+    .footer {
+        padding: var(--spacing-800)  0 var(--spacing-1000) 0;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 70rem;
+        width: 100%;
+        margin: 0 auto;
+        
+        &__content{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            flex-grow: 1;
+            margin-left: var(--spacing-1600); 
+        }
+
+        &__text {
+            margin-bottom: 0;
+
+            strong{
+                display: inline;
+            }
+        }
+    }
+}
