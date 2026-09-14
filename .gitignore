@@ -1,0 +1,8 @@
+.sass-cache/
+*.css.map
+.shelf/
+
+.DS_Store
+Thumbs.db
+
+.vscode/
