@@ -12,6 +12,12 @@ body {
     background-color: var(--white);
     color: var(--state);
     --webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+
+    background-image: url('../assets/image/bg-main-mobile.png');
+    background-repeat: no-repeat;
+    background-position: calc(100% + 120px) -152px;
+    background-size: 384px 655px; 
 }
 
 img {
