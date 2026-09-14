@@ -1,0 +1,30 @@
+@import 'fonts';
+@import 'variables';
+@import 'reset';
+
+.header{
+    margin: var(--spacing-800) var(--spacing-250);
+
+    &__logo{
+        width: 9rem;
+        height: var(--spacing-400);
+    }
+}
+
+.hero{
+    margin: 0 var(--spacing-250) var(--spacing-800) var(--spacing-250);
+
+    &__title{
+        font-size: var(--spacing-500);
+        font-weight: 700;
+        letter-spacing: -1px;
+        line-height: 1;
+        margin-bottom: var(--spacing-500);
+    }
+
+    &__description{
+        font-size: var(--spacing-200);
+        font-weight: 400;
+        line-height: 1.5;
+    }
+}
